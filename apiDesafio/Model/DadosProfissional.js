@@ -93,7 +93,7 @@ class DadosProfissional {
                 return {errors};
             }
             const dadosProfissional  = await this.dadosProfissional(usuario_id)
-            console.log('++++',dadosProfissional)
+            
             if(dadosProfissional.length == 0) {
                 error.push('Dados não existem');
                return error;
@@ -116,7 +116,7 @@ class DadosProfissional {
 
                 console.log(atualizacao)
                 const  novosDadosProfissional = await knex.update(atualizacao).where({usuario_id}).table('dadosProfissional')
-                console.log('*****', novosDadosProfissional)
+                
                 return novosDadosProfissional;
             }            
         } catch (error) {
