@@ -11,7 +11,7 @@
             v-model="email"
             placeholder="E-mail"
           />
-          <input type="text" name="senha" v-model="senha" placeholder="Senha" />
+          <input type="password" name="senha" v-model="senha" placeholder="Senha" />
           <button type="submit">Entrar</button>
         </form>
       </div>
